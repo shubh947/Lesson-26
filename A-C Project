@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after class project</title>
+</head>
+<body>
+<h2>Map and arrange an Array </h2>
+<p id="product_value"></p>
+<p id="result"></p>
+<button onclick="ascending()">Ascending order</button>
+<button onclick="descending()">Descending order</button>
+<script>
+    var numbers = [30, 4, 18, 90, 98];
+    function myFunction(num) {
+        return num * 20
+    }
+    var newarray = numbers.map(myFunction);
+    document.getElementById("product_value").innerHTML = newarray;
+     document.getElementById("result").innerHTML = points;
+        function ascending() {
+            points.sort(function (a, b) { return a - b });
+            document.getElementById("result").innerHTML = points;
+        }
+        document.getElementById("result").innerHTML = points;
+        function descending() {
+            points.sort(function (a, b) { return b - a });
+            document.getElementById("result").innerHTML = points;
+        }
+</script>
+</body>
+</html>
